@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin Panel</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/admin.css"/> 
+
+</head>
+<body>
+
+  <!-- LOGIN -->
+  <div class="login-screen" id="loginScreen">
+    <div class="login-box">
+      <div class="lock-icon"></div>
+      <h2>Admin Panel</h2>
+      <p>Enter your password to manage products</p>
+      <input type="password" id="passwordInput" placeholder="Enter password" onkeydown="if(event.key==='Enter') login()"/>
+      <p class="error-msg" id="errorMsg"> Wrong password. Try again.</p>
+      <button class="btn-login" onclick="login()">Login →</button>
+    </div>
+  </div>
+
+  <!-- DASHBOARD -->
+  <div class="admin-dashboard" id="adminDashboard">
+
+    <div class="admin-topbar">
+      <h1 style="font-size: 23px;">Admin Dashboard</h1>
+      <div class="topbar-right">
+        <a class="btn-view-shop" href="shop.html" target="_blank">👁 View Shop</a>
+        <button class="btn-logout" onclick="logout()">Logout</button>
+      </div>
+    </div>
+
+    <div class="admin-content">
+      <h2>Edit Products</h2>
+      <p class="subtitle">Update product names, prices and images. Click Save when done  changes show on shop immediately</p>
+      <div id="editRows"><div class="loading">Loading products... </div></div>
+    </div>
+
+    <div class="save-bar">
+      <p>Make changes above then click Save</p>
+      <div class="save-actions">
+        <span class="save-success" id="saveSuccess">Saved! Shop updated!</span>
+        <button class="btn-save" id="saveBtn" onclick="saveChanges()"> Save Changes</button>
+      </div>
+    </div>
+
+  </div>
+
+
+
+</body>
+<script src="js/config.js"></script>
+<script src="js/admin.js"></script>
+</html>
