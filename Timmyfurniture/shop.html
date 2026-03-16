@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shop by Category</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="css/shop.css"/>
+</head>
+<body>
+
+<section class="shop">
+  <div class="section-header">
+    <span>Browse Our Store</span>
+    <h2>Shop by Category</h2>
+  </div>
+
+  <div class="filter-row">
+    <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;">
+      <select class="filter-select" id="categoryFilter" onchange="filterProducts()">
+        <option value="all">All Products</option>
+        <option value="chair">Chair</option>
+        <option value="living">Living Room</option>
+        <option value="table">Table</option>
+        <option value="storage">Storage</option>
+        <option value="dining">Dining</option>
+        <option value="bedroom">Bedroom</option>
+        <option value="wardrobe">Wardrobe</option>
+        <option value="decor">Decor</option>
+      </select>
+      <p class="product-count">Showing <span id="countDisplay">0</span> products</p>
+    </div>
+  </div>
+
+  <!-- Products Grid — built by JavaScript from Supabase -->
+  <div class="products-grid" id="productsGrid">
+    <div class="loading">Loading products... ⏳</div>
+  </div>
+</section>
+
+<!-- MODAL -->
+<div class="modal-backdrop" id="modalBackdrop" onclick="closeModalOutside(event)">
+  <div class="modal">
+    <img class="modal-img" id="modalImg" src="" alt=""/>
+    <div class="modal-body">
+      <span class="modal-tag" id="modalTag"></span>
+      <h3 id="modalName"></h3>
+      <div class="modal-price" id="modalPrice"></div>
+      <p id="modalDesc"></p>
+      <div class="modal-actions">
+        <button class="modal-close" onclick="closeModal()">Close</button>
+        <a class="modal-whatsapp" id="modalWhatsapp" href="#" target="_blank">
+          <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.528 5.855L.057 23.882l6.197-1.448A11.934 11.934 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.001-1.366l-.36-.214-3.68.86.925-3.585-.235-.368A9.818 9.818 0 1112 21.818z"/></svg>
+          Order on WhatsApp
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="/js/config.js"></script>
+<script src="js/shop.js"></script>
+</body>
+</html>
