@@ -64,7 +64,7 @@
             <label>Image URL</label>
             <input type="text" id="editImg_${i}" value="${p.image}" placeholder="Paste image URL" oninput="previewImage(${i})"/>
           </div>
-        </div>
+        </div>C:\Users\IFEOLUWA\Desktop\Myproject\linkedin.pngC:\Users\IFEOLUWA\Desktop\Myproject\linkedin.png
       `;
     });
   }

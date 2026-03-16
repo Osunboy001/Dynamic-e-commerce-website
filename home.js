@@ -42,9 +42,7 @@ console.log(object)
 
 
 
-  // ── SUPABASE CONFIG ──
-  const SUPABASE_URL = 'https://zeqjuonotvlkgihmseyg.supabase.co';
-  const SUPABASE_KEY = 'sb_publishable_vYtZ0oPCXMQppzEZiGLocA_ixkeDDDj';
+
   const WHATSAPP_NUMBER = '23408157240158';
 
   let allProducts = [];

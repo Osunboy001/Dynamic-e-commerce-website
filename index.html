@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Header Component</title>
+  <title>Timmyshop</title>
 
   <!-- Google Font: Cormorant Garamond (display) + DM Sans (body) -->
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet"/>
@@ -28,21 +28,21 @@
 
     <!-- CENTER: Nav -->
     <ul class="nav-links">
-      <li><a href="#" class="active">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Contact</a></li>
+      <li><a href="#hero" class="active">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#location">Contact</a></li>
     </ul>
 
     <!-- RIGHT: Icons + Hamburger -->
     <div class="nav-icons">
       <!-- Location Icon — update href to your desired link -->
-      <a href="#your-location-link" title="Our Location">
+      <a href="#location" title="Our Location">
         <i data-lucide="map-pin"></i>
         <span class="icon-label">Location</span>
       </a>
 
       <!-- Shop Icon — update href to your desired link -->
-      <a href="/shop.html" title="Shop">
+      <a href="shop.html" title="Shop">
         <i data-lucide="shopping-bag"></i>
         <span class="icon-label">Shop</span>
       </a>
@@ -57,11 +57,11 @@
 
   <!-- Mobile Drawer -->
   <nav class="mobile-menu" id="mobileMenu">
-    <a href="#"><i data-lucide="home" style="width:18px;height:18px;"></i> Home</a>
-    <a href="#"><i data-lucide="info" style="width:18px;height:18px;"></i> About</a>
-    <a href="#"><i data-lucide="mail" style="width:18px;height:18px;"></i> Contact</a>
-    <a href="#your-location-link"><i data-lucide="map-pin" style="width:18px;height:18px;"></i> Location</a>
-    <a href="#your-shop-link"><i data-lucide="shopping-bag" style="width:18px;height:18px;"></i> Shop</a>
+    <a href="index.html"><i data-lucide="home" style="width:18px;height:18px;"></i> Home</a>
+    <a href="#about"><i data-lucide="info" style="width:18px;height:18px;"></i> About</a>
+    <a href="#location"><i data-lucide="mail" style="width:18px;height:18px;"></i> Contact</a>
+    <a href="#location"><i data-lucide="map-pin" style="width:18px;height:18px;"></i> Location</a>
+    <a href="shop.html"><i data-lucide="shopping-bag" style="width:18px;height:18px;"></i> Shop</a>
   </nav>
 </header>
 
@@ -84,10 +84,10 @@
   <div class="hero-content">
     <div class="hero-card">
       <span class="tag">New Arrivals For 2026</span>
-      <h2>Discover Our New Collection</h2>
+      <h2>We are here because of you,no you no us</h2>
       <p>Elevate your living space with timeless pieces crafted for comfort and style. Designed to last, made to inspire.</p>
       <!-- Update href to your shop/collection page -->
-      <a href="#" class="btn-checkout">Check Out</a>
+      <a href="shop.html" class="btn-checkout">Check Out</a>
     </div>
   </div>
 
@@ -152,7 +152,7 @@
   </div>
 </div>
 
-<section class="about">
+<section class="about" id="about">
   <div class="about-container">
 
     <!-- LEFT: Images -->
@@ -179,7 +179,7 @@
     <div class="about-text">
       <span class="tag">Our Story</span>
       <h2>Crafted With Passion, <em>Built to Last</em></h2>
-      <p>We started as a small workshop with one belief — that great furniture should tell a story. Every joint, every finish, every curve is a decision made with care and intention.</p>
+      <p>We started as a small workshop with one belief  that great furniture should tell a story. Every joint, every finish, every curve is a decision made with care and intention.</p>
       <p>Today we bring that same dedication to every home we touch. From dining rooms to bedrooms, our pieces are designed to grow with your family and stand the test of time.</p>
 
       <div class="divider"></div>
@@ -280,6 +280,40 @@
 </section>
 
 
+    <!-- MAP -->
+   
+<section id="location" class="location-section">
+  <div class="location-container">
+
+    <!-- MAP -->
+    <div class="location-map slide-left">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.123456789!2d-122.419415!3d37.774929!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sBarber+Shop!5e0!3m2!1sen!2sus!4v123456789"
+        loading="lazy"
+        allowfullscreen>
+      </iframe>
+    </div>
+
+
+
+    <!-- LOCATION INFO -->
+    <div class="location-info slide-right">
+      <h2>Visit Our Shop</h2>
+      <p>
+        We are located in the heart of the city, providing premium grooming
+        services for gentlemen who value style, comfort, and precision.
+      </p>
+
+      <div class="location-details">
+        <p><strong> Address:</strong> 123 Main Street, City Center</p>
+        <p><strong> Phone:</strong> +1 234 567 890</p>
+        <p><strong> Hours:</strong> Mon – Sat: 9am – 8pm</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
 
 <section class="footer">
 
@@ -302,11 +336,11 @@
                 </p>
                 <!-- Social Media Icons -->
                <div class="social-icons">
-                    <a href="https://www.linkedin.com/in/ifeoluwa-morakinyo-141047378/" class="social-link" aria-label="Facebook">
-                        <img src="../images/logo2.png" alt="Facebook">
+                    <a href="https://www.facebook.com/loviecode" class="social-link" aria-label="Facebook">
+                        <img src="communication.png" alt="Facebook">
                     </a>
-                    <a href="#" class="social-link" aria-label="Twitter">
-                        <img src="../images/logo3.png" alt="Twitter">
+                    <a href="https://www.linkedin.com/in/ifeoluwa-morakinyo-141047378/" class="social-link" aria-label="Linkdin">
+                        <img src="linkedin.png" alt="Linkdin">
                     </a>
                 
                 </div>
@@ -317,8 +351,8 @@
                 <h3 class="footer-heading">Quick Links</h3>
                 <ul class="footer-links">
                     <li><a href="./index.html">Home</a></li>
-                    <li><a href="./about.html">About Us</a></li>
-                    <li><a href="./funnyme.html">Contact</a></li>
+                    <li><a href="./#about">About Us</a></li>
+                    <li><a href="./#location">Contact</a></li>
                    
                 </ul>
             </div>
@@ -327,10 +361,10 @@
             <div class="footer-column">
                 <h3 class="footer-heading">Categories</h3>
                 <ul class="footer-links">
-                    <li><a href="./funnyme.html">Chair</a></li>
-                    <li><a href="./funnyme.html">Bed frame</a></li>
-                    <li><a href="./funnyme.html">Shoe rag</a></li>
-                      <li><a href="./funnyme.html">tables</a></li>
+                    <li><a href="./shop.html">Chair</a></li>
+                    <li><a href="./shop.html">Bed frame</a></li>
+                    <li><a href="./shop.html">Shoe rag</a></li>
+                      <li><a href="./shop.html">tables</a></li>
                 
                 </ul>
             </div>
@@ -350,7 +384,7 @@
 
         <!-- Footer Bottom Section -->
         <div class="footer-bottom">
-            <p>&copy; 2026 Happy Me. All rights reserved.</p>
+            <p>&copy; 2026 Timmy Furniture. All rights reserved.</p>
          
                 
             </div>
@@ -358,6 +392,7 @@
     </div>
 </footer>
 
+<script src="js/config.js"></script>
 <script src="js/home.js"></script>
 <script>
   document.addEventListener('DOMContentLoaded', function() {
